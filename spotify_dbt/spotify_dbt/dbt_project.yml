@@ -1,0 +1,25 @@
+name: "spotify_dbt"
+version: "1.0.0"
+config-version: 2
+
+# Which profile to use from your ~/.dbt/profiles.yml
+profile: "spotify_dbt"
+
+# Where dbt should look for files
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+# Project-level model configuration
+models:
+  spotify_dbt:
+    +database: SPOTIFY_DB
+    +schema: "{{ target.schema }}"   # Use the profile's target.schema to avoid duplicate prefixes
+    +materialized: view  # Default all models to views

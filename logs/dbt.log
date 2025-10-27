@@ -1,0 +1,181 @@
+[0m14:51:15.606602 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B5F4DDD700>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B5F59DA870>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B5F2DC99D0>]}
+
+
+============================== 14:51:15.614431 | 5b8a29e4-e249-495b-8eff-d8957e508c3c ==============================
+[0m14:51:15.614431 [info ] [MainThread]: Running with dbt=1.10.13
+[0m14:51:15.615528 [debug] [MainThread]: running dbt with arguments {'log_format': 'default', 'invocation_command': 'dbt debug', 'profiles_dir': 'C:\\Users\\sonik\\.dbt', 'target_path': 'None', 'cache_selected_only': 'False', 'warn_error': 'None', 'log_path': 'logs', 'fail_fast': 'False', 'indirect_selection': 'eager', 'send_anonymous_usage_stats': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'partial_parse': 'True', 'version_check': 'True', 'use_experimental_parser': 'False', 'quiet': 'False', 'introspect': 'True', 'empty': 'None', 'log_cache_events': 'False', 'debug': 'False', 'no_print': 'None', 'use_colors': 'True', 'printer_width': '80', 'write_json': 'True'}
+[0m14:51:15.645001 [info ] [MainThread]: dbt version: 1.10.13
+[0m14:51:15.646099 [info ] [MainThread]: python version: 3.12.4
+[0m14:51:15.647177 [info ] [MainThread]: python path: C:\Users\sonik\AppData\Local\Programs\Python\Python312\python.exe
+[0m14:51:15.647720 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m14:51:16.990164 [info ] [MainThread]: Using profiles dir at C:\Users\sonik\.dbt
+[0m14:51:16.991129 [info ] [MainThread]: Using profiles.yml file at C:\Users\sonik\.dbt\profiles.yml
+[0m14:51:16.992128 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\sonik\spotify-mds-project\dbt_project.yml
+[0m14:51:16.994521 [info ] [MainThread]: adapter type: snowflake
+[0m14:51:16.995489 [info ] [MainThread]: adapter version: 1.10.2
+[0m14:51:16.995489 [info ] [MainThread]: Configuration:
+[0m14:51:16.996493 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m14:51:16.997490 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m14:51:16.998509 [info ] [MainThread]: Required dependencies:
+[0m14:51:16.999557 [debug] [MainThread]: Executing "git --help"
+[0m14:51:17.062789 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m14:51:17.063747 [debug] [MainThread]: STDERR: "b''"
+[0m14:51:17.063747 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m14:51:17.065303 [info ] [MainThread]: Connection:
+[0m14:51:17.065830 [info ] [MainThread]:   account: https://bl01269.ap-south-1.aws
+[0m14:51:17.066396 [info ] [MainThread]:   user: kirtan110
+[0m14:51:17.067419 [info ] [MainThread]:   database: SPOTIFY_DB
+[0m14:51:17.068408 [info ] [MainThread]:   warehouse: COMPUTE_WH
+[0m14:51:17.068408 [info ] [MainThread]:   role: ACCOUNTADMIN
+[0m14:51:17.068408 [info ] [MainThread]:   schema: transform
+[0m14:51:17.069916 [info ] [MainThread]:   authenticator: None
+[0m14:51:17.070929 [info ] [MainThread]:   oauth_client_id: None
+[0m14:51:17.071923 [info ] [MainThread]:   query_tag: None
+[0m14:51:17.072926 [info ] [MainThread]:   client_session_keep_alive: False
+[0m14:51:17.073988 [info ] [MainThread]:   host: None
+[0m14:51:17.074924 [info ] [MainThread]:   port: None
+[0m14:51:17.074924 [info ] [MainThread]:   proxy_host: None
+[0m14:51:17.077465 [info ] [MainThread]:   proxy_port: None
+[0m14:51:17.078448 [info ] [MainThread]:   protocol: None
+[0m14:51:17.079449 [info ] [MainThread]:   connect_retries: 1
+[0m14:51:17.079449 [info ] [MainThread]:   connect_timeout: None
+[0m14:51:17.081193 [info ] [MainThread]:   retry_on_database_errors: False
+[0m14:51:17.082203 [info ] [MainThread]:   retry_all: False
+[0m14:51:17.083206 [info ] [MainThread]:   insecure_mode: False
+[0m14:51:17.084210 [info ] [MainThread]:   reuse_connections: True
+[0m14:51:17.084210 [info ] [MainThread]:   s3_stage_vpce_dns_name: None
+[0m14:51:17.085203 [info ] [MainThread]: Registered adapter: snowflake=1.10.2
+[0m14:51:17.651171 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m14:51:17.720510 [debug] [MainThread]: Using snowflake connection "debug"
+[0m14:51:17.720510 [debug] [MainThread]: On debug: select 1 as id
+[0m14:51:17.720510 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:51:29.734314 [debug] [MainThread]: Snowflake adapter: Error running SQL: select 1 as id
+[0m14:51:29.736323 [debug] [MainThread]: Snowflake adapter: Rolling back transaction.
+[0m14:51:29.737321 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m14:51:29.738310 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m14:51:29.740315 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\sonik\spotify-mds-project\dbt_project.yml> not found
+
+[0m14:51:29.740844 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  250001: Could not connect to Snowflake backend after 2 attempt(s).Aborting
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m14:51:29.742853 [debug] [MainThread]: Command `dbt debug` failed at 14:51:29.742853 after 14.36 seconds
+[0m14:51:29.744693 [debug] [MainThread]: Connection 'debug' was left open.
+[0m14:51:29.745714 [debug] [MainThread]: On debug: No close available on handle
+[0m14:51:29.745714 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B5F57F1040>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B586091DF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B58883EFF0>]}
+[0m14:51:29.746714 [debug] [MainThread]: Flushing usage events
+[0m14:51:31.397652 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:52:29.157542 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021395990740>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021394EA70E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021394EA6FC0>]}
+
+
+============================== 14:52:29.162581 | 71eb6fde-c8ba-4650-a709-5d2aa5d5d003 ==============================
+[0m14:52:29.162581 [info ] [MainThread]: Running with dbt=1.10.13
+[0m14:52:29.163581 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'profiles_dir': 'C:\\Users\\sonik\\.dbt', 'log_format': 'default', 'use_colors': 'True', 'write_json': 'True', 'warn_error': 'None', 'log_path': 'C:\\Users\\sonik\\spotify-mds-project\\logs', 'partial_parse': 'True', 'fail_fast': 'False', 'send_anonymous_usage_stats': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'version_check': 'True', 'quiet': 'False', 'introspect': 'True', 'empty': 'None', 'log_cache_events': 'False', 'debug': 'False', 'no_print': 'None', 'invocation_command': 'dbt debug', 'cache_selected_only': 'False', 'target_path': 'None'}
+[0m14:52:29.228152 [info ] [MainThread]: dbt version: 1.10.13
+[0m14:52:29.264784 [info ] [MainThread]: python version: 3.12.4
+[0m14:52:29.265345 [info ] [MainThread]: python path: C:\Users\sonik\AppData\Local\Programs\Python\Python312\python.exe
+[0m14:52:29.266359 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m14:52:30.591873 [info ] [MainThread]: Using profiles dir at C:\Users\sonik\.dbt
+[0m14:52:30.592877 [info ] [MainThread]: Using profiles.yml file at C:\Users\sonik\.dbt\profiles.yml
+[0m14:52:30.593876 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\sonik\spotify-mds-project\dbt_project.yml
+[0m14:52:30.594874 [info ] [MainThread]: adapter type: snowflake
+[0m14:52:30.596752 [info ] [MainThread]: adapter version: 1.10.2
+[0m14:52:30.758303 [info ] [MainThread]: Configuration:
+[0m14:52:30.759357 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m14:52:30.760311 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m14:52:30.761317 [info ] [MainThread]: Required dependencies:
+[0m14:52:30.762863 [debug] [MainThread]: Executing "git --help"
+[0m14:52:30.809438 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m14:52:30.810476 [debug] [MainThread]: STDERR: "b''"
+[0m14:52:30.811444 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m14:52:30.812436 [info ] [MainThread]: Connection:
+[0m14:52:30.813511 [info ] [MainThread]:   account: https://bl01269.ap-south-1.aws
+[0m14:52:30.814436 [info ] [MainThread]:   user: kirtan110
+[0m14:52:30.815945 [info ] [MainThread]:   database: SPOTIFY_DB
+[0m14:52:30.815945 [info ] [MainThread]:   warehouse: COMPUTE_WH
+[0m14:52:30.816961 [info ] [MainThread]:   role: ACCOUNTADMIN
+[0m14:52:30.818017 [info ] [MainThread]:   schema: transform
+[0m14:52:30.818954 [info ] [MainThread]:   authenticator: None
+[0m14:52:30.819953 [info ] [MainThread]:   oauth_client_id: None
+[0m14:52:30.820989 [info ] [MainThread]:   query_tag: None
+[0m14:52:30.820989 [info ] [MainThread]:   client_session_keep_alive: False
+[0m14:52:30.822345 [info ] [MainThread]:   host: None
+[0m14:52:30.822345 [info ] [MainThread]:   port: None
+[0m14:52:30.823863 [info ] [MainThread]:   proxy_host: None
+[0m14:52:30.823863 [info ] [MainThread]:   proxy_port: None
+[0m14:52:30.824884 [info ] [MainThread]:   protocol: None
+[0m14:52:30.824884 [info ] [MainThread]:   connect_retries: 1
+[0m14:52:30.826388 [info ] [MainThread]:   connect_timeout: None
+[0m14:52:30.826388 [info ] [MainThread]:   retry_on_database_errors: False
+[0m14:52:30.827396 [info ] [MainThread]:   retry_all: False
+[0m14:52:30.827396 [info ] [MainThread]:   insecure_mode: False
+[0m14:52:30.828397 [info ] [MainThread]:   reuse_connections: True
+[0m14:52:30.830398 [info ] [MainThread]:   s3_stage_vpce_dns_name: None
+[0m14:52:30.830398 [info ] [MainThread]: Registered adapter: snowflake=1.10.2
+[0m14:52:31.269449 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m14:52:31.340335 [debug] [MainThread]: Using snowflake connection "debug"
+[0m14:52:31.340335 [debug] [MainThread]: On debug: select 1 as id
+[0m14:52:31.340335 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:52:43.502141 [debug] [MainThread]: Snowflake adapter: Error running SQL: select 1 as id
+[0m14:52:43.503153 [debug] [MainThread]: Snowflake adapter: Rolling back transaction.
+[0m14:52:43.503153 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m14:52:43.505150 [info ] [MainThread]: [31m1 check failed:[0m
+[0m14:52:43.505150 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  250001: Could not connect to Snowflake backend after 2 attempt(s).Aborting
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m14:52:43.507163 [debug] [MainThread]: Command `dbt debug` failed at 14:52:43.507163 after 14.57 seconds
+[0m14:52:43.507163 [debug] [MainThread]: Connection 'debug' was left open.
+[0m14:52:43.508159 [debug] [MainThread]: On debug: No close available on handle
+[0m14:52:43.509151 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021395182AB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000213A7E9F590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000213A83D15E0>]}
+[0m14:52:43.509151 [debug] [MainThread]: Flushing usage events
+[0m14:52:44.973940 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:52:51.854732 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B07C39DBB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B07A355A00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B07D132870>]}
+
+
+============================== 14:52:51.859284 | c4bfa4a5-ba0b-4775-aa26-e1beeec6b0f9 ==============================
+[0m14:52:51.859284 [info ] [MainThread]: Running with dbt=1.10.13
+[0m14:52:51.860259 [debug] [MainThread]: running dbt with arguments {'profiles_dir': 'C:\\Users\\sonik\\.dbt', 'log_format': 'default', 'use_colors': 'True', 'write_json': 'True', 'printer_width': '80', 'warn_error': 'None', 'log_path': 'C:\\Users\\sonik\\spotify-mds-project\\logs', 'partial_parse': 'True', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True', 'fail_fast': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'indirect_selection': 'eager', 'version_check': 'True', 'use_experimental_parser': 'False', 'quiet': 'False', 'introspect': 'True', 'empty': 'False', 'log_cache_events': 'False', 'debug': 'False', 'no_print': 'None', 'invocation_command': 'dbt run --select USER_ENGAGEMENT', 'cache_selected_only': 'False', 'target_path': 'None'}
+[0m14:52:53.306832 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'c4bfa4a5-ba0b-4775-aa26-e1beeec6b0f9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B00E374920>]}
+[0m14:52:53.400993 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'c4bfa4a5-ba0b-4775-aa26-e1beeec6b0f9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B07C7660C0>]}
+[0m14:52:53.403030 [info ] [MainThread]: Registered adapter: snowflake=1.10.2
+[0m14:52:53.880464 [debug] [MainThread]: checksum: 9f0c81e2574b4ff463f3d16d080df83c6982fc0372c9feeacae0504ac9ea3ffe, vars: {}, profile: , target: , version: 1.10.13
+[0m14:52:53.883007 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m14:52:53.884037 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'c4bfa4a5-ba0b-4775-aa26-e1beeec6b0f9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B00FA472F0>]}
+[0m14:52:54.893968 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.spotify_dbt
+- models.spotify_dbt.transform
+[0m14:52:54.899035 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'c4bfa4a5-ba0b-4775-aa26-e1beeec6b0f9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B07C851730>]}
+[0m14:52:54.950075 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\sonik\spotify-mds-project\target\manifest.json
+[0m14:52:54.955625 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\sonik\spotify-mds-project\target\semantic_manifest.json
+[0m14:52:55.002612 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'c4bfa4a5-ba0b-4775-aa26-e1beeec6b0f9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B00FD5E180>]}
+[0m14:52:55.003255 [info ] [MainThread]: Found 492 macros
+[0m14:52:55.003815 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c4bfa4a5-ba0b-4775-aa26-e1beeec6b0f9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B00FD46960>]}
+[0m14:52:55.004836 [warn ] [MainThread]: The selection criterion 'USER_ENGAGEMENT' does not match any enabled nodes
+[0m14:52:55.006008 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m14:52:55.007234 [debug] [MainThread]: Command end result
+[0m14:52:55.028579 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\sonik\spotify-mds-project\target\manifest.json
+[0m14:52:55.031650 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\sonik\spotify-mds-project\target\semantic_manifest.json
+[0m14:52:55.034649 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\sonik\spotify-mds-project\target\run_results.json
+[0m14:52:55.036160 [debug] [MainThread]: Command `dbt run` succeeded at 14:52:55.036160 after 3.49 seconds
+[0m14:52:55.037226 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B07D1A3260>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B07CFF8FE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B07D6CE660>]}
+[0m14:52:55.037226 [debug] [MainThread]: Flushing usage events
+[0m14:52:56.315342 [debug] [MainThread]: An error was encountered while trying to flush usage events

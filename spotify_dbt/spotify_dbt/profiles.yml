@@ -1,0 +1,14 @@
+spotify_dbt:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: bl01269.ap-south-1.aws
+      user: kirtan110
+      password: "21Soni@@Kirtan"
+      role: ACCOUNTADMIN
+      database: SPOTIFY_DB
+      warehouse: COMPUTE_WH
+      schema: transform
+      threads: 4
+      client_session_keep_alive: false
