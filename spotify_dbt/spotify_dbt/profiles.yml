@@ -3,9 +3,9 @@ spotify_dbt:
   outputs:
     dev:
       type: snowflake
-      account: bl01269.ap-south-1.aws
-      user: kirtan110
-      password: "21Soni@@Kirtan"
+      account: <your_account_locator>.<region>.<cloud>  # e.g. xx12345.ap-south-1.aws
+      user: <your_user>
+      password: <your_password>
       role: ACCOUNTADMIN
       database: SPOTIFY_DB
       warehouse: COMPUTE_WH
