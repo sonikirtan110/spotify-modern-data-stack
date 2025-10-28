@@ -1,0 +1,18 @@
+# Local secrets
+.env
+docker/dags/.env
+spotify_dbt/spotify_dbt/profiles.yml
+docs/credentials.json
+
+# Python
+__pycache__/
+*.pyc
+
+# Airflow logs
+docker/logs/
+logs/
+
+# dbt artifacts
+spotify_dbt/target/
+target/
+spotify_dbt/spotify_dbt/dbt_packages/
